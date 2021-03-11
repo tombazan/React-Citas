@@ -1,4 +1,5 @@
 import React, {Fragment, useState} from 'react';
+import {v4 as uuidv4} from 'uuid'
 const Formulario = () => {
 
     //Crear State de Citas
@@ -32,8 +33,12 @@ const Formulario = () => {
 
             return;
         }
+        //Eliminar el mensaje de error
+        actualizarError(false);
 
         //Asignar un ID
+        cita.id = uuidv4();
+        console.log(cita);
 
         //Crear la cita
 
