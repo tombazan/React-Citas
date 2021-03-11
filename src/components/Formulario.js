@@ -38,7 +38,6 @@ const Formulario = () => {
 
         //Asignar un ID
         cita.id = uuidv4();
-        console.log(cita);
 
         //Crear la cita
 
